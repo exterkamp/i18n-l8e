@@ -12,6 +12,7 @@
   "devDependencies": {
     "rimraf": "^2.6.1"
   },
+  "license": "MIT",
   "scripts": {
     "generate": "yarn get-json && yarn gen-html",
     "get-json": "mkdir output & lighthouse https://example.com/ --output=json --output-path=output/results.json",
