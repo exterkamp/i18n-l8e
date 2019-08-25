@@ -8,11 +8,17 @@ Simple project to view all the different supported locales in the
 Run lighthouse to populate json, and generate locales.
 
 ```shell
-$ yarn generate
+$yarn generate
 ```
 
 Run the simple express server to view the reports.
 
 ```shell
-$ node server/main.js
+$node server/main.js
+```
+
+Or do both.
+
+```shell
+$yarn start
 ```
