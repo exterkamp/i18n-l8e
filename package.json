@@ -1,0 +1,21 @@
+{
+  "engines": {
+    "node": ">=10.13"
+  },
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "iso-639-1": "^2.1.0",
+    "lighthouse": "^5.2.0",
+    "puppeteer": "^1.19.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1"
+  },
+  "scripts": {
+    "generate": "yarn get-json && yarn gen-html",
+    "get-json": "mkdir output & lighthouse https://example.com/ --output=json --output-path=output/results.json",
+    "gen-html": "node generate-translations.js",
+    "clean": "rimraf output"
+  }
+}

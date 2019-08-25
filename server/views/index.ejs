@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <main>
+        <h1>Lighthouse i18n Reports</h1>
+        <div>
+            <h2>Supported Locales</h2>
+            <ul style="columns: 2;">
+                <% locales.forEach(function(locale) { %>
+                    <li><a href="<%= locale.href %>"><%= locale.text %></a></li>
+                <% }); %>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
+
