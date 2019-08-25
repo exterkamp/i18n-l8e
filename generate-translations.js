@@ -4,7 +4,6 @@ const swapLocale =
     require('lighthouse/lighthouse-core/lib/i18n/swap-locale.js');
 const renderer =
     require('lighthouse/lighthouse-core/report/report-generator.js');
-const puppeteer = require('puppeteer'); 
 const LOCALES = require('./locales.js');
 
 const path = require('path');
@@ -18,7 +17,7 @@ if (!fs.existsSync(dir)){
 }
 
 // Get original json lhr
-let json = fs.readFileSync('output\\results.json');
+let json = fs.readFileSync('output/results.json');
 let lhr = JSON.parse(json);
 
 (async() => {

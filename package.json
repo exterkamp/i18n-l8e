@@ -13,6 +13,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "start": "yarn generate && node server/main.js",
     "generate": "yarn clean && yarn get-json && yarn gen-html",
     "get-json": "mkdir output & lighthouse https://example.com/ --output=json --output-path=output/results.json",
     "gen-html": "node generate-translations.js",
